@@ -2,8 +2,8 @@
 
 import requests
 from typing import Optional, List
-from exceptions import APIError, AuthenticationError
-from models import Project, EqItem, AttachmentData, APIResponse
+from .exceptions import APIError, AuthenticationError
+from .models import Project, EqItem, AttachmentData, APIResponse
 
 class ExOnlineClient:
     def __init__(self, api_key: str, base_url: str = "https://cloud.ex-online.com/TagBrowser/api/v2/Puppy"):
