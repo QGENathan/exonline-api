@@ -9,7 +9,7 @@ client = ExOnlineClient(api_key="your_key_here")
 
 # Option 2: Config
 # Ensure EXO_KEY is set in your environment
-from exonline_sdk.config import Config
+from exonline_api.config import Config
 config = Config.from_env()
 client = ExOnlineClient(api_key=config.api_key)
 
