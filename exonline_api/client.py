@@ -64,7 +64,7 @@ class ExOnlineClient:
 
         return response.data
     
-    def get_equipment(self, project_id: int, dossier_ids: List[int], date_from: str = "2010-01-01", date_to: str = None, pg: int = 1, pgSize: int = 1000) -> List[EqItem]:
+    def get_equipment(self, project_id: int, dossier_ids: List[int] = [], date_from: str = "2010-01-01", date_to: str = None, pg: int = 1, pgSize: int = 1000) -> List[EqItem]:
         """
         Fetches detailed equipment properties for specific IDs.
         """
